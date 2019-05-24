@@ -8,4 +8,3 @@ def value():
 	return (3 + random() * 2) * choice([-1, 1])
 
 	
-	

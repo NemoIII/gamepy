@@ -19,7 +19,22 @@ def line(a, b, x, y):
 
 
 class vector(collection.Sequence):
+	"""Two-dimensional vector.
+
+    Vectors can be modified in-place.
+
+	v = vector(0, 1)
+    v.move(1)
+    v
+    vector(1, 2)
+    v.rotate(90)
+    v
+    vector(-2.0, 1.0)
+
+    """
+    # pylint: disable=invalid-name
 	PRECISION = 6
+	
 	__slots__ = ('_x', '_y', '_hash')
 
 

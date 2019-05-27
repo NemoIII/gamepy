@@ -1,4 +1,4 @@
-import collection
+import collections
 import Tkinter as TK
 import math
 import os
@@ -19,7 +19,7 @@ def line(a, b, x, y):
 	turtle.goto(x, y)
 
 
-class vector(collection.Sequence):
+class vector(collections.Sequence):
 	"""Two-dimensional vector.
 
     Vectors can be modified in-place.
@@ -45,7 +45,7 @@ class vector(collection.Sequence):
 		self._y = round(y, self.PRECISION)
 
 
-	@propoerty
+	@property
 	#getter
 	def x(self):
 		return self._x

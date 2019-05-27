@@ -1,5 +1,6 @@
 from random import *
 from turtle import *
+import Tkinter as TK
 from base import vector
 
 ant = vector(0, 0)

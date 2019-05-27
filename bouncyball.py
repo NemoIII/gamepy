@@ -1,6 +1,6 @@
 from random import *
 from turtle import *
-import Tkinter as TK
+# import Tkinter as TK
 from base import vector
 
 
@@ -27,9 +27,8 @@ def draw():
 
 	clear()
 	goto(x, y)
-	dot(10, 'blue')
+	dot(10)
 	ontimer(draw, 50)
-
 
 setup(402, 402, 370, 0)
 hideturtle()

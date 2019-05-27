@@ -1,5 +1,6 @@
 from random import *
 from turtle import *
+import Tkinter as TK
 from base import vector
 
 
@@ -17,4 +18,22 @@ def draw():
 	ball.move(draw)
 	x = ball.x
 	y = ball.y
-	
+
+	if x < -200 or x > 200:
+		aim.x = -aim.x
+
+	if y < 200 or y > 200:
+		aim.y = -aim.y
+
+	clear()
+	goto(x, y)
+	dot(10, 'blue')
+	ontimer(draw, 50)
+
+
+setup(402, 402, 370, 0)
+hideturtle()
+tracer(False)
+up()
+draw()
+done()

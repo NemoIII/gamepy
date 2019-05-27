@@ -13,4 +13,8 @@ aim = vector(value(),value())
 #the projection or de movement
 
 def draw():
-	pass
+	#move the ball and screen
+	ball.move(draw)
+	x = ball.x
+	y = ball.y
+	

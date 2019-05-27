@@ -15,7 +15,7 @@ def draw():
 	ant.move(aim)
 	ant.x = wrap(ant.x)
 	ant.y = wrap(ant.y)
-	am.move(random() - 0.5)
+	aim.move(random() - 0.5)
 	aim.rotate(random() * 10 - 5)
 	clear()
 	goto(ant.x, ant.y)

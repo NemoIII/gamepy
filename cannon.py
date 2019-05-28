@@ -69,3 +69,5 @@ tracer(False)
 onscreenclick(tap)
 move()
 done()
+
+""" Tenho que ver porque não está chamando o copy e o move nesse código. """
